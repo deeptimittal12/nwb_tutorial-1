@@ -1,4 +1,4 @@
-# Notebook
+# NWB Tutorial
 
 Welcome to the Neurodata Without Borders (NWB) format official tutorial! NWB is a format for publishing and exchanging neuroscience data. The purpose of this tutorial is to demonstrate how to read and write data to NWB files. We will cover:
 

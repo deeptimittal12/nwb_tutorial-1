@@ -51,6 +51,7 @@ end
 EXCLUDE = %w[
   hdfv_published_position
   hdfv_published_lfp
+  hdfv_filtered
 ]
 
 segs, curr = [], nil
