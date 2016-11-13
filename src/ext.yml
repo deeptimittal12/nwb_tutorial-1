@@ -1,0 +1,36 @@
+---
+id: buz_nb_ext
+
+children:
+  - name: general
+
+
+type: group
+additionalChildren: false
+children:
+  - "core/definitions/session_id"
+  - "core/definitions/experimenter"
+  - "core/definitions/institution"
+  - "core/definitions/lab"
+  - "core/definitions/related_publications"
+  - "core/definitions/notes"
+  - "core/definitions/experiment_description"
+  - "core/definitions/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"
+  - name: session_id
+    schema: "core/definitions/general/session_id"

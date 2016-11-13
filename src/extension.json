@@ -1,0 +1,14 @@
+{
+  "fs": {
+    "buzsaki_ica": {
+      "IndependentComponentAnalysis/": {
+        "merge": ["<Interface>/" ],
+        "description": "An MxN storing a set of components (inverse of the mixing matrix) learned through Independent Component Analysis",
+            "attributes": {
+              "help?": {
+                "data_type":"text"
+      }
+    }
+  }
+}
+
