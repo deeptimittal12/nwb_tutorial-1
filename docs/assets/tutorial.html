@@ -11751,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Notebook">Notebook<a class="anchor-link" href="#Notebook">&#182;</a></h1>
+<h1 id="NWB-Tutorial">NWB Tutorial<a class="anchor-link" href="#NWB-Tutorial">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11934,7 +11934,6 @@ div#notebook {
 <p>Click on <code>LFP</code> to examine it. <code>LFP</code> is a built-in interface type-- it is defined in NWB's core schema. It must contain one or more instances of the <code>TimeSeries</code> class <code>ElectricalSeries</code>.   inside <code>LFP</code>,you should see 13 groups: <code>all</code>, <code>shank_1</code>, <code>shank_2</code>, ..., <code>shank_12</code>. <code>all</code> contains the LFP recorded from all 64 electrodes. The <code>shank_&lt;N&gt;</code> groups contain HDF5 region references into the <code>all</code> dataset (corresponding to the channels on each shank). They are provided for convenience. Note that the <code>LFP</code> interface definition does not require this particular internal structure; it just requires one or more <code>ElectricalSeries</code>.</p>
 <p>Now let's find the position. The position representation we will use is a product of processing overhead video of the experiment. The subject had two LEDs mounted on its head; the X and Y coordinates of each LED were extracted. Like <code>LFP</code>, <code>Position</code> interface is defined in the NWB core schema. It must contain one or more <code>TimeSeries</code> of class <code>SpatialSeries</code>. Also like <code>LFP</code>, our <code>Position</code> interface includes an <code>all</code> timeseries, containing the coordinates of both LEDs, and <code>led_1</code> and <code>led_2</code>, which are region references to the coordinates of each separate LED.</p>
 <p>Because we are concerned with theta-band (5-10 Hz) activity in this tutorial, we need a filtered form of the LFP. We also need a one-dimensional representation of the position. These data (the red nodes in Figure \ref{fig:flow_chart}) have been included with this tutorial's NWB file in <code>/processing/filtered</code>. This module contains <code>BehavioralSegments</code>, <code>FilteredEphys</code> and <code>Position</code> interfaces. <code>BehavioralSegments</code> contains an <code>IntervalSeries</code> containing temporal boundaries for each traversal of the track. <code>FilteredEphys</code> contains a downsampled, bandpass-filtered version of the LFP. <code>Position</code> contains a <code>SpatialSeries</code> with a one-dimensional version of the position, obtained through principal component analysis.</p>
-<p><img src="figures/hdfv_filtered.png" alt=""></p>
 
 </div>
 </div>
